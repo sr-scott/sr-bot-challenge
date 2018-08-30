@@ -1,9 +1,10 @@
 const app = require('./lib/app');
+const { logger } = require('./lib/logger');
 
 try {
   app.listen(3000);
 
-  console.log('Server started');
+  logger.info('Server started');
 } catch (e) {
-  console.log(`Error starting server: ${e.message}`);
+  logger.error(`Error starting server: ${e.message}`);
 }
