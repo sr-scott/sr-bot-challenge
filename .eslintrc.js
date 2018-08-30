@@ -3,6 +3,8 @@ module.exports = {
     plugins: ["jest"],
     rules: {
         'no-multiple-empty-lines': ['error', { max: 1, maxBOF: 0, maxEOF: 0 }],
+        'default-case': 'off',
+        'no-lone-blocks': 'off'
     },
     overrides: [
         {
